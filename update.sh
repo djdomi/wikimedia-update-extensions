@@ -35,9 +35,10 @@ if [ -d "$WPATH" ]; then
 
 if [[ $DELPATH != "false" ]]; then
         rm -r $WPATH/$EXTN
-fi
 
+fi
 git clone $GURL/$EXTN $WPATH/$EXTN --branch $BRANCH
+
 fi
 done
 
