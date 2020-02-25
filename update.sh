@@ -23,6 +23,7 @@ BRANCH=REL1_24
 ################################################################################################
 ################################################################################################
 
+
 #Normally no need to change, only except in case, if you dont use it for that i've written this ;)
 GURL=https://gerrit.wikimedia.org/r/mediawiki/extensions
 #NO SLASH ON THE END!!
@@ -35,10 +36,9 @@ if [ -d "$WPATH" ]; then
 
 if [[ $DELPATH != "false" ]]; then
         rm -r $WPATH/$EXTN
-
 fi
-git clone $GURL/$EXTN $WPATH/$EXTN --branch $BRANCH
 
+git clone $GURL/$EXTN $WPATH/$EXTN --branch $BRANCH
 fi
 done
 
